@@ -51,8 +51,3 @@ Grande parte do aprendizado veio do excelente tutorial do canal **Game Developme
 ## ✅ Status do Projeto
 
 🟢 **Concluído** — Jogo funcional e estável.
-
----
-
-## 📂 Organização do Repositório
-
