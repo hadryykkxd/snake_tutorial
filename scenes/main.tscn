@@ -1,11 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://esywf0ii8i6u"]
+[gd_scene load_steps=8 format=3 uid="uid://esywf0ii8i6u"]
 
-[ext_resource type="Script" path="res://scenes/main.gd" id="1_fmw02"]
-[ext_resource type="Texture2D" uid="uid://ckds54seb4bfe" path="res://assets/bg.png" id="2_fps3c"]
+[ext_resource type="Script" uid="uid://uf7ea3lc7hev" path="res://scenes/main.gd" id="1_fmw02"]
+[ext_resource type="Texture2D" uid="uid://bj2ambwei5ogi" path="res://assets/bg.png" id="2_fps3c"]
 [ext_resource type="PackedScene" uid="uid://beaa828xfn3nx" path="res://scenes/snake_segment.tscn" id="2_io2sj"]
 [ext_resource type="PackedScene" uid="uid://tmcq5gpw66gu" path="res://scenes/hud.tscn" id="3_s77pf"]
-[ext_resource type="Texture2D" uid="uid://bs828gnkhbpqx" path="res://assets/apple.png" id="5_sxedt"]
+[ext_resource type="Texture2D" uid="uid://dxyvfago0gd5f" path="res://assets/apple.png" id="5_sxedt"]
 [ext_resource type="PackedScene" uid="uid://cad25ojl47q8" path="res://scenes/game_over_menu.tscn" id="6_xkat8"]
+[ext_resource type="AudioStream" uid="uid://bmo7wkmx2x0dr" path="res://scenes/Snake III JAVA game theme song.mp3" id="7_o6xl0"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_fmw02")
@@ -26,6 +27,11 @@ offset = Vector2(25, 25)
 
 [node name="GameOverMenu" parent="." instance=ExtResource("6_xkat8")]
 process_mode = 2
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_o6xl0")
+volume_db = -20.835
+autoplay = true
 
 [connection signal="timeout" from="MoveTimer" to="." method="_on_move_timer_timeout"]
 [connection signal="restart" from="GameOverMenu" to="." method="_on_game_over_menu_restart"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bmo7wkmx2x0dr"
+path="res://.godot/imported/Snake III JAVA game theme song.mp3-ccf45888b5beb6fbe5853c86db3a32b5.mp3str"
+
+[deps]
+
+source_file="res://scenes/Snake III JAVA game theme song.mp3"
+dest_files=["res://.godot/imported/Snake III JAVA game theme song.mp3-ccf45888b5beb6fbe5853c86db3a32b5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
